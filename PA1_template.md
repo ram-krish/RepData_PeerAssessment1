@@ -16,7 +16,7 @@ names(aggrByDate)<-c("Date","Steps")
 hist(aggrByDate$Steps,main="Histogram of Steps in a Day",xlab="Steps")
 ```
 
-![](./Reproducible_Research_Project_1_Steps_files/figure-html/TotalStepsInaDay.png)
+![](./instructions_fig/TotalStepsInaDay.png)
 
 ```r
 MeanStepsPerDay<-mean(aggrByDate$Steps,na.rm=TRUE)
