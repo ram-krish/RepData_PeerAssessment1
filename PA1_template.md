@@ -44,7 +44,7 @@ plot(aggrByInterval$interval,aggrByInterval$steps,xlab="Interval",ylab="Steps",
      main="Interval Vs Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](./instructions_fig/StepsPerInterval.png)<!-- -->
 
 ```r
 maxStepsByInterval<-max(aggrByInterval$steps,na.rm=TRUE)
@@ -81,7 +81,7 @@ names(aggrByDateNA)<-c("Date","Steps")
 hist(aggrByDateNA$Steps,main="Histogram of total steps per Day NA Imputed",xlab="Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](./instructions_fig/histogramNAImputed.png)<!-- -->
 
 ```r
 MeanStepsPerDayNA<-mean(aggrByDateNA$Steps)
@@ -131,4 +131,4 @@ xyplot(Steps~Interval|Day, data=aggrByIntervalDay,type="l",layout=c(1,2),
        ylab="Average Number of Steps", xlab="Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](./instructions_fig/PanelPlot.png)<!-- -->
